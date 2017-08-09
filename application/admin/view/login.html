@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>中石化联量计酬系统</title>
+    <meta name="description" content="这是一个 index 页面">
+    <meta name="keywords" content="index">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    {load href="__static__/i/favicon.png" /}
+    {load href="__static__/i/app-icon72x72@2x.png" /}
+    <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    {css href="__static__/css/amazeui.min.css" /}
+    {css href="__static__/css/amazeui.datatables.min.css" /}
+    {css href="__static__/css/app.css" /}
+    {js href="__static__/js/jquery.min.js" /}
+    {js href="__static__/js/jquery.form.js" /}
+
+</head>
+
+<body data-type="login">
+
+
+<!-- 提示框-->
+<div class="am-modal am-modal-alert" tabindex="-1" id="info_model">
+    <div class="am-modal-dialog">
+        <div class="am-modal-hd">中石化联量计酬系统</div>
+        <div class="am-modal-bd">
+            Hello world！
+        </div>
+        <div class="am-modal-footer">
+            <span class="am-modal-btn">确定</span>
+        </div>
+    </div>
+</div>
+<!-- 提示框 end-->
+
+{js href="__static__/js/theme.js" /}
+{__CONTENT__}
+{js href="__static__/js/amazeui.min.js" /}
+{js href="__static__/js/app.js" /}
+
+<script>
+    var SUCCESS_CODE = "{$Think.config.status_code['success']}";  // 成功返回值
+    var FAIL_CODE    = "{$Think.config.status_code['fail']}";  // 失败返回值
+
+    //alert 模拟 提示框
+    function alertControl(message,status){
+        var alertM = $('#info_model');
+        if(status == 'fail')
+        {
+            alertM.find('.am-modal-hd').html("操作失败");
+        }
+        else
+        {
+            alertM.find('.am-modal-hd').html("操作成功");
+        }
+        alertM.find('.am-modal-bd').html(message);
+        alertM.modal();
+    }
+</script>
+</body>
+</html>
+

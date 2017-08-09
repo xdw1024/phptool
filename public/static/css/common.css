@@ -1,0 +1,31 @@
+.am-form input[readonly]{
+    cursor:default !important;
+} /* 修改只读表单鼠标手型 */
+
+/* 跨组织选人模态框 */
+.am-modal-no-btn .am-modal-dialog {font-size: 14px;}
+.am-modal-dialog .am-modal-bd-tree { border-right: 1px solid #ddd; min-height: 300px;max-height: 300px;overflow: auto;}
+.am-modal-dialog .am-modal-bd-banch {max-height: 300px; overflow-y: auto;}
+.am-modal-dialog .am-modal-bd-choose {min-height: 1px;margin-top: 15px;padding: 0px;text-align: left;font-size: 0px;}
+
+@media only screen and (min-width:1000px) {
+    .am-modal-dialog {
+        width: 940px;
+    }
+}
+@media only screen and (min-width: 641px) {
+    .am-modal-dialog .am-g {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+.am-modal-dialog .am-table>thead>tr>th {text-align: center;}
+.am-modal-dialog .am-checkbox {padding: 0px; margin: 0px;}
+.am-modal-dialog .am-ucheck-icons {top: 2px;}
+.am-modal-dialog .am-modal-hd {border-bottom: 2px solid #0e90d2; padding-bottom: 10px; margin-bottom: 15px;}
+.am-modal-dialog .am-modal-bd-choose-org {margin-bottom:10px;margin-top:10px;background-color: #eee; color: #0e90d2; padding: 5px 10px;font-size: 14px;}
+.am-modal-dialog .am-modal-bd-choose-user {padding: 3px 3px 3px 15px; background-color: #0e90d2; color: #fff;  font-size: 14px;  display: inline-flex;margin-bottom: 3px;margin-left: 5px;}
+.am-modal-dialog .am-modal-bd-choose-user .am-close {color: #fff; opacity: 0.3;display: table-caption;line-height: 18px;}
+.am-modal-dialog .am-modal-bd-choose-user .am-close:hover {color: #fff; opacity: 0.8;}
+.am-modal-dialog .am-cancel-btn {color: #999;}
+/* 跨组织选人模态框 @end */

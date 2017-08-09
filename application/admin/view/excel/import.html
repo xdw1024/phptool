@@ -1,0 +1,38 @@
+<div class="row-content am-cf">
+    <div class="row">
+        <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
+            <div class="widget am-cf">
+                <div class="widget-head am-cf">
+                    <div class="widget-title  am-cf"><h1>门店任务导入</h1></div>
+                </div>
+                <div class="widget-body  am-fr">
+                    <div class="am-u-sm-12 am-u-md-6 am-u-lg-6">
+                        <div class="am-form-group">
+                            <div class="am-btn-toolbar">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="am-u-sm-12">
+                        <div class="am-form-group">
+                            <form  method="post" id ="fileform" action="{:zw_build_url('excel/saveImport')}" class="pageForm required-validate" enctype="multipart/form-data" >
+                                <fieldset>
+                                    <div class="pageFormContent">
+                                        <table>
+                                            <tr><label for="excelFile">上传文件：</label></tr>
+                                            <tr>
+                                                <td><input type="file" class="form-control" id="excelFile" name="excelFile" style="margin: 0px; " /></td>
+                                                <td><button type="submit" class="btn btn-success" >导入</button></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
